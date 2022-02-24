@@ -302,11 +302,14 @@ function shane_tm_nav_bg(){
 	jQuery(window).on('scroll',function(){
 		var topbar	 		= jQuery('.shane_tm_topbar .topbar_inner');
 		var WinOffset		= jQuery(window).scrollTop();
+		const letras = jQuery(".colorA");
 
 		if(WinOffset >= 100){
 			topbar.addClass('opened');
+			letras.addClass("letranegra");
 		}else{
 			topbar.removeClass('opened');
+			letras.removeClass("letranegra");
 		}
 	});
 }

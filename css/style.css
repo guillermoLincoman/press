@@ -41,6 +41,18 @@
 	margin-top: 15px;
 	height: 133% !important;
 }
+.colorA{
+	color: #ffffff !important;
+}
+.pressKit{
+	color: #ffb625 !important;
+}
+.letranegra{
+	color: black !important;
+}
+.rota90{
+	transform: rotate(90deg);
+}
 /*---------------------------------------------------*/
 /*	01) SHANE BASE
 /*---------------------------------------------------*/
