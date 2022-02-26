@@ -35,7 +35,11 @@
 	.acomNombre{
 		max-width: 203px !important;
 		margin-left: 0px !important;
+		padding-left: 10px !important;
 
+	}
+	.titlePortofolio{
+		display: none;
 	}
 }
 
@@ -56,6 +60,10 @@
 }
 .fondoDark{
 	background-color: rgb(44 48 54) !important;
+}
+.titlePortofolio h3{
+	font-family: "Roboto" !important;
+	font-size: 25px
 }
 /*ARROOOW*/
 
