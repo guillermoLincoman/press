@@ -3,8 +3,43 @@
  * Author: Marketify
  * This file is made for CURRENT TEMPLATE
 */
+// Pasar a Modo Dark
+const darkMode = document.querySelector("#logo");
+darkMode.addEventListener('click', shane_tm_darkLight);
+function shane_tm_darkLight(){
+	//Busco el logo
+	const logo = document.querySelector('#logo');
+	if(logo.attributes[1].textContent == 1){
+		logo.attributes[1].textContent = 0;
+		shane_tm_dark();
+	}else{
+		logo.attributes[1].textContent = 1;
+		shane_tm_light();
+	}
+}
+function shane_tm_dark(){
+	console.log("Dark On");
+	const logo = document.querySelector('#logo');
+	const fondoMenu = document.querySelector('#fondoMenu');
+	const letrasMenu = document.querySelector('.colorA');
+		//Cambiar Logo
+	logo.src = "./img/logo/new/logoRoggianoLight.png";
+	fondoMenu.classList.add('fondoDark');
+	letrasMenu.classList.add('letranegra');
+	letrasMenu.classList.remove("colorA");
 
-
+}
+function shane_tm_light(){
+	console.log("Light On");
+	const fondoMenu = document.querySelector('#fondoMenu');
+	const logo = document.querySelector('#logo');
+	const letrasMenu = document.querySelector('.letranegra');
+		//Cambiar Logo
+	logo.src = "./img/logo/new/logoRoggianoDark.png";
+	fondoMenu.classList.remove("fondoDark");
+	letrasMenu.classList.add('colorA');
+	letrasMenu.classList.remove("letranegra");
+}
 jQuery(document).ready(function(){
 
 	"use strict";
@@ -26,7 +61,7 @@ jQuery(document).ready(function(){
 	shane_tm_data_images();
 	shane_tm_contact_form();
 	shane_tm_jarallax();
-	shane_tm_owl_carousel();
+	shane_tm_owl_carousel();	
 	
 	jQuery(window).load('body', function(){
 		shane_tm_my_load();
@@ -303,10 +338,15 @@ function shane_tm_nav_bg(){
 		var topbar	 		= jQuery('.shane_tm_topbar .topbar_inner');
 		var WinOffset		= jQuery(window).scrollTop();
 		const letras = jQuery(".colorA");
+		const logo = jQuery("#logo");
 
 		if(WinOffset >= 100){
 			topbar.addClass('opened');
-			letras.addClass("letranegra");
+			console.log(logo[0].attributes[1].textContent)
+			if(logo[0].attributes[1].textContent == 1){
+				letras.addClass("letranegra");
+			}
+
 		}else{
 			topbar.removeClass('opened');
 			letras.removeClass("letranegra");

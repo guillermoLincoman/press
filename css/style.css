@@ -21,6 +21,7 @@
 14) SHANE MODALBOX CONTACT
 15) SHANE CURSOR
 16) SHANE MEDIA QUERIES (FOR SMALL DEVIVES)
+
 /*Agregados*/
 .acomNombre{
 	margin-left: 20px !important;
@@ -37,6 +38,9 @@
 
 	}
 }
+
+
+
 .acomPlastico{
 	margin-top: 15px;
 	height: 133% !important;
@@ -50,8 +54,8 @@
 .letranegra{
 	color: black !important;
 }
-.rota90{
-	transform: rotate(90deg);
+.fondoDark{
+	background-color: rgb(44 48 54) !important;
 }
 /*---------------------------------------------------*/
 /*	01) SHANE BASE
@@ -528,7 +532,13 @@ h6 { font-size: 16px; }
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+	transform: rotate(0deg);
 	padding-right: 20px;
+}
+@media (max-width: 700px) {
+	.shane_tm_hero .content{
+		transform: rotate(-90deg);
+	}
 }
 .shane_tm_hero .name_wrap{
 	width: 100%;
