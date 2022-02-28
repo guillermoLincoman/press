@@ -91,7 +91,6 @@ function shane_tm_portfolio(){
 		// Needed variables
 		var list 		 = jQuery('.shane_tm_portfolio .portfolio_list ul');
 		var filter		 = jQuery('.shane_tm_portfolio .portfolio_filter ul');
-
 		if(filter.length){
 			// Isotope Filter 
 			filter.find('a').on('click', function(){
@@ -131,7 +130,7 @@ function shane_tm_projects() {
 			jQuery(document).on('mousemove', function(e) {
 				jQuery('.shane_tm_portfolio_titles').css({
 					left: e.clientX - 10,
-					top: e.clientY + 25
+					top: e.clientY + 15
 				});
 			});
 		}).on('mouseleave', function() {
