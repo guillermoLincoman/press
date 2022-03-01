@@ -164,8 +164,8 @@
 		Fotos = .photography
 	-->
 	<div class="shane_tm_section" id="portfolio">
-		<div class="shane_tm_portfolio">
-			<div class="container">
+		<div class="shane_tm_portfolio ">
+			<div class="container ">
 				<div class="shane_tm_title">
 					<div class="title_flex">
 						<div class="left">
@@ -184,7 +184,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="shane_tm_portfolio_titles"></div>
 				<div class="portfolio_list contai">
 					<ul class="gallery_zoom">
 						<li class="soundclound">
@@ -526,13 +525,15 @@
 			<div class="close">
 				<a href="#"><img class="svg" src="img/svg/cancel.svg" alt="" /></a>
 			</div>
-			<div class="description_wrap scrollable">
-				<div class="title">
-					<h3>Ponte en contacto</h3>
-				</div>
+			<div class="description_wrap scrollable contFlex">
+
 				<div class="wrapper">
+
 					<div class="left">
 						<div class="fields">
+							<div class="title">
+								<h3>Ponte en contacto</h3>
+							</div>
 							<form action="/" method="post" class="contact_form" id="contact_form" autocomplete="off">
 								<div class="returnmessage" data-success="Su mensaje ha sido recibido, pronto nos comunicaremos con usted."></div>
 								<div class="empty_notice"><span>Por favor complete los campos requeridos</span></div>
@@ -559,43 +560,30 @@
 
 							</form>
 						</div>
-					</div>
-					<div class="right">
-						<div class="map_wrap">
-							<div class="map" id="ieatmaps"></div>
-						</div>
 					</div>	
 				</div>	
-				<div class="short_info">
-					<ul>
-						<li>
-							<div class="list_inner">
-								<img class="svg" src="img/svg/location.svg" alt="" />
-								<p>Caballito, Buenos Aires, Argentina</p>
+
+				<div class="wrapper">
+					<div class="contFlexDos">
+						<div class="containDatos">
+							<img class="svg" src="img/svg/location.svg" alt="" />
+							<p>Caballito, Buenos Aires, Argentina</p>
+						</div>
+						<div class="containDatos">
+							<img class="svg" src="img/svg/phone.svg" alt="" />
+							<p><a href="tel:+77 033 442 55 57">+03 03 456 </a></p>
+						</div>
+						<div class="containDatos">
+							<h1 class="titleRedes"> REDES SOCIALES</h1>
+							<BR></BR>
+							<div class="socialesDos">
+								<a class="estiloRedes" href="#"><img class="svg" src="img/svg/social/facebook.svg" alt="" ></a>
+								<a class="estiloRedes" href="#"><img class="svg" src="img/svg/social/twitter.svg" alt="" ></a>
+								<a class="estiloRedes" href="#"><img class="svg" src="img/svg/social/behance.svg" alt="" ></a>
+								<a class="estiloRedes" href="#"><img class="svg" src="img/svg/social/dribbble.svg" alt="" ></a>
 							</div>
-						</li>
-						<li>
-							<div class="list_inner">
-								<img class="svg" src="img/svg/phone.svg" alt="" />
-								<p><a href="tel:+77 033 442 55 57">+03 03 456 </a></p>
-							</div>
-						</li>
-						<li>
-							<div class="list_inner">
-								<img class="svg" src="img/svg/share.svg" alt="" />
-								<ul class="social">
-									<li><a href="#"><img class="svg" src="img/svg/social/facebook.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/twitter.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/instagram.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/dribbble.svg"></a></li>
-									<li><a href="#"><img class="svg" src="img/svg/social/tik-tok.svg"></a></li>
-									
-									<!-- If you want add or change svg images you can download here for free https://www.flaticon.com -->
-									
-								</ul>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -627,7 +615,6 @@
 <!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
 <script src="js/plugins.js"></script>
 <script src="js/init.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5bpEs3xlB8vhxNFErwoo3MXR64uavf6Y&callback=initMap"></script>
 <!-- /SCRIPTS -->
 
 </body>

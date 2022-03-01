@@ -23,6 +23,63 @@
 16) SHANE MEDIA QUERIES (FOR SMALL DEVIVES)
 
 /*Agregados*/
+.containDatos{
+	width: 80%;
+    background-color: #000;
+    margin: 10px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.containDatos svg{
+	width: 30px;
+    height: 30px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+.containDatos a{
+	text-decoration: none;
+    color: #fff;
+}
+.containDatos h1{
+	font-weight: 500;
+    line-height: 1.4;
+    font-family: "Poppins";
+	background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: #fff;
+	display: block;
+	text-align: center;
+}
+.containDatos p{
+	font-family: "Poppins";
+    font-weight: 500;
+    color: #fff;
+	background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.contFlex{
+	display: flex;
+}
+.contFlexDos{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
 .acomNombre{
 	margin-left: 20px !important;
 }
@@ -57,7 +114,19 @@
     width: 100%;
     justify-content: space-evenly;
     align-content: center;
+}
+.socialesDos{
+	display: flex;
+	padding: 2px 0px 20px 0px;
+	height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    align-content: center;
 
+}
+.titleRedes{
+	color: white;
+	font-size: 30px;
 }
 .estiloRedes{
 	text-decoration: none;
@@ -123,9 +192,16 @@
 /*---------------------------------------------------*/
 
 html {
+	
 	overflow-x: hidden;
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
 }
 body{
 	font-family: "Roboto";
@@ -134,6 +210,7 @@ body{
 	letter-spacing: 0.5px;
 	word-wrap: break-word;
 	font-weight: 400;
+	background-attachment: fixed;
 	background-color: #fff;
 	color: #767676;
 }
@@ -927,6 +1004,9 @@ body.loaded .overlay_effect:after{
 .shane_tm_portfolio .portfolio_list ul{
 	margin: 0px 0px 0px -50px;
 	list-style-type: none;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .shane_tm_portfolio .portfolio_list ul li{
 	margin: 0px 0px 50px 0px;
@@ -1890,14 +1970,17 @@ body.modal{overflow: hidden;}
 	display: flex;
 	padding-top: 31px;
 	margin-bottom: 50px;
+	justify-content: center;
+	margin: 30px;
 }
+
 .shane_tm_mobalbox_contact .desc{
 	max-width: 50%;
 	float: left;
 	padding-top: 95px;
 }
 .shane_tm_mobalbox_contact .left{
-	width: 50%;
+	width: 80%;
 	padding-right: 25px;
 }
 .shane_tm_mobalbox_contact .fields{
@@ -1969,7 +2052,7 @@ body.modal{overflow: hidden;}
   width: 100%;
 }
 .shane_tm_mobalbox_contact .short_info{
-	width: 100%;
+	width: 80%;
 	height: auto;
 	clear: both;
 	float: left;
@@ -1981,7 +2064,7 @@ body.modal{overflow: hidden;}
 .shane_tm_mobalbox_contact .short_info > ul > li{
 	margin: 0px 0px 50px 0px;
 	float: left;
-	width: 33.3333%;
+	width: 70%;
 	padding-left: 50px;
 	text-align: center;
 }
