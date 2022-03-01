@@ -86,6 +86,7 @@
 @media (max-width: 1522px) {
 	.acomNombre{
 		max-width: 703px !important;
+		padding-left: 40px !important;
 	}
 	svg{
 		width: 55px !important;
@@ -96,7 +97,7 @@
 	.acomNombre{
 		max-width: 203px !important;
 		margin-left: 0px !important;
-		padding-left: 10px !important;
+		padding-left: 40px !important;
 
 	}
 	.titlePortofolio{
@@ -107,13 +108,21 @@
 		height: 33px !important;
 	}
 }
+@media (max-width: 420px) {
+	.acomNombre{
+		padding-left: 30px !important;
+
+	}
+}
 .sociales{
 	display: flex;
-	padding: 2px 0px 20px 0px;
+	padding: 20px 0px 20px 0px;
 	height: 100%;
     width: 100%;
     justify-content: space-evenly;
     align-content: center;
+	background-color: black;
+	margin-bottom: 20px;
 }
 .socialesDos{
 	display: flex;
@@ -130,11 +139,15 @@
 }
 .estiloRedes{
 	text-decoration: none;
-	color: rgb(255, 182, 37);
+	color: rgb(255, 255, 255);
 	list-style-type: none;
     font-size: 30px;
     padding-top: 4px;
     font-family: 'Bebas Neue', cursive;
+}
+.estiloRedes:hover{
+	color: rgb(255, 182, 37);
+	border: 1px rgb(185, 44, 44) solid;
 }
 
 .containSound iframe{
